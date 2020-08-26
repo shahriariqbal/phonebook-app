@@ -3,20 +3,32 @@
 <form action="/contact" method="POST" autocomplete="off">
     <div class="form-group">
         <label> Full Name </label>
-        <input type="text" class="form-control" name="fullName" placeholder="Enter Full Name ">
+        <input type="text" class="form-control" name="fullName" placeholder="Enter Full Name"
+            value="{{contact.fullName}}">
+        <div class="text-danger">
+            {{contact.fullNameError}}
+        </div>
     </div>
 
     <div class="form-group">
         <label> Phone Number </label>
-        <input type="text" class="form-control" name="phoneNumber" placeholder="Enter Phone Number ">
+        <input type="text" class="form-control" name="mobile" placeholder="Enter Phone Number"
+            value="{{contact.mobile}}">
+        <div class="text-danger">
+            {{contact.mobileError}}
+        </div>
     </div>
 
     <div class="form-group">
         <label> Email </label>
-        <input type="text" class="form-control" name="email" placeholder="Enter Email ">
+        <input type="text" class="form-control" name="email" placeholder="Enter Email " value="{{contact.email}}">
+
+        <div class="text-danger">
+            {{contact.emailError}}
+        </div>
     </div>
 
     <div class="form-group">
-         <button type="submit" class="btn btn-info"> <i class="fa fa-database"></i> Submit </button>
+        <button type="submit" class="btn btn-info"> <i class="fa fa-database"></i> Submit </button>
     </div>
 </form>
