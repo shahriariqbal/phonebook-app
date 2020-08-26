@@ -10,7 +10,13 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  insertRecord(req, res);
+
+    if (req.body._id == '') {
+        insertRecord(req, res);
+    } else {
+        updateRecord(req, res);
+    }
+  
 });
 
 function insertRecord(req, res) {
@@ -34,6 +40,28 @@ function insertRecord(req, res) {
     }
   });
 }
+
+
+function updateRecord(req, res){
+    Contact.findOneAndUpdate({_id: req.body._id}, req.body, {new: true}, (err, doc) => {
+        if (!err) {
+            res.redirect('contact/list');
+        } else {
+
+            if(err.name == 'ValidationError'){
+                handleValidationError(err, req.body);
+                res.render("contact/addOrEdit", {
+                    viewTitle: 'Update Contact',
+                    contact: req.body
+                } );
+            }else{
+                console.log('Error during record update: ' + err);
+            }
+            
+        }
+    } );
+}
+
 
 router.get("/list", (req, res) => {
   
@@ -68,5 +96,18 @@ function handleValidationError(err, body) {
     }
   }
 }
+
+
+router.get('/:id', (req, res) => {
+    Contact.findById( req.params.id, (err, doc) => {
+        if (!err) {
+            res.render("contact/addOrEdit", {
+                viewTitle: "Update Contact",
+                contact: doc
+            } );
+            
+        }
+    })
+});
 
 module.exports = router;
