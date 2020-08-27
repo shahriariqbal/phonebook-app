@@ -32,4 +32,7 @@ app.listen(3000, () => {
 
 
 
+
 app.use('/contact',  contactController);
+
+app.use('/',  contactController);

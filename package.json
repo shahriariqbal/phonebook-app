@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "nodemon server.js"
+    "serve": "nodemon server.js",
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 3000\" \"open http://localhost:3000/\""
+   
   },
   "repository": {
     "type": "git",
@@ -23,7 +26,9 @@
     "mongoose": "^5.3.4"
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "handlebars": "^4.5.0",
+    "http-server": "^0.12.3",
     "nodemon": "^2.0.4"
   }
 }

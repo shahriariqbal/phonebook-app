@@ -22,5 +22,12 @@ contactsSchema.path('email').validate((val) => {
 }, 'Invalid e-mail.');
 
 
+// Custom validation for mobile
+contactsSchema.path('mobile').validate((val) => {
+    mobileRegex = /^(?:\+88|01)?(?:\d{11}|\d{13})$/;
+    return mobileRegex.test(val);
+}, 'Invalid mobile.');
+
+
 
 mongoose.model('Contact',  contactsSchema);
