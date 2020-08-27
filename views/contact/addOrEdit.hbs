@@ -2,7 +2,7 @@
 
 <form action="/contact" method="POST" autocomplete="off">
 
-<input type="hidden" name="_id" value="{{employee._id}}">
+    <input type="hidden" name="_id" value="{{contact._id}}">
 
     <div class="form-group">
         <label> Full Name </label>
@@ -15,8 +15,8 @@
 
     <div class="form-group">
         <label> Phone Number </label>
-        <input type="text" class="form-control" name="mobile" placeholder="Enter Phone Number, ex: 01635220984 or +8801635220984"
-            value="{{contact.mobile}}">
+        <input type="text" class="form-control" name="mobile"
+            placeholder="Enter Phone Number, ex: 01635220984 or +8801635220984" value="{{contact.mobile}}">
         <div class="text-danger">
             {{contact.mobileError}}
         </div>
