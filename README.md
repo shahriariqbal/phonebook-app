@@ -30,10 +30,10 @@
 
 
 # Demo:-
-![alt text](https://github.com/shahriariqbal079/phonebook_app/tree/master/projectScreenshots/1.png?raw=true)
-![alt text](https://github.com/shahriariqbal079/phonebook_app/tree/master/projectScreenshots/2.png?raw=true)
-![alt text](https://github.com/shahriariqbal079/phonebook_app/tree/master/projectScreenshots/3.png?raw=true)
-![alt text](https://github.com/shahriariqbal079/phonebook_app/tree/master/projectScreenshots/4.png?raw=true)
+![alt text](https://github.com/shahriariqbal079/phonebook_app/tree/master/projectScreenshots/1.png?raw=true) <br/>
+![alt text](https://github.com/shahriariqbal079/phonebook_app/tree/master/projectScreenshots/2.png?raw=true) <br/>
+![alt text](https://github.com/shahriariqbal079/phonebook_app/tree/master/projectScreenshots/3.png?raw=true) <br/>
+![alt text](https://github.com/shahriariqbal079/phonebook_app/tree/master/projectScreenshots/4.png?raw=true) <br/>
 
 
 
