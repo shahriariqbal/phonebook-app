@@ -32,10 +32,10 @@
 # Screenshots:-
 
 <p align="center">
-  <img src="https://github.com/shahriariqbal079/phonebook_app/tree/master/projectScreenshots/1.png"  >
-  <img src="https://github.com/shahriariqbal079/phonebook_app/tree/master/projectScreenshots/2.png"  >
-  <img src="https://github.com/shahriariqbal079/phonebook_app/tree/master/projectScreenshots/3.png"  >
-  <img src="https://github.com/shahriariqbal079/phonebook_app/tree/master/projectScreenshots/4.png"  >
+  <img src="https://github.com/shahriariqbal079/phonebook_app/blob/master/projectScreenshots/1.png"  >
+  <img src="https://github.com/shahriariqbal079/phonebook_app/blob/master/projectScreenshots/2.png"  >
+  <img src="https://github.com/shahriariqbal079/phonebook_app/blob/master/projectScreenshots/3.png"  >
+  <img src="https://github.com/shahriariqbal079/phonebook_app/blob/master/projectScreenshots/4.png"  >
 
 </p>
 
