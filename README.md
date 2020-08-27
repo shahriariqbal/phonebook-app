@@ -30,7 +30,9 @@
 
 
 # Demo:-
-![alt text](https://github.com/shahriariqbal079/phonebook_app/images/1.png?raw=true)
+![alt text](https://github.com/shahriariqbal079/phonebook_app/tree/master/images/1.png?raw=true)
+
+![Screenshot](screenshot.png)
 
 
  
